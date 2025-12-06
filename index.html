@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAYWORLD X - Entrada +18</title>
+<link rel="stylesheet" href="estilo90/mainestilo.css">
+</head>
+<body class="center-screen">
+
+<div class="welcome-box">
+    <h1>🔥 GAYWORLD X</h1>
+    <p>Plataforma exclusiva para adultos (+18)</p>
+
+    <button class="btn-primary" id="enterBtn">Entrar</button>
+    <button class="btn-secondary" id="exitBtn">Salir</button>
+
+    <hr>
+
+    <h3>🔗 Compartir esta página</h3>
+
+    <!-- Botón de compartir -->
+    <button id="shareBtn" class="btn-share">Compartir enlace</button>
+
+    <!-- Link visible para copiar -->
+    <p>
+        Tu enlace:  
+        <a href="https://tupagina.com/gayworldx" target="_blank">
+            https://tupagina.com/gayworldx
+        </a>
+    </p>
+</div>
+
+<script>
+// BOTÓN DE COMPARTIR (funciona en móviles)
+document.getElementById('shareBtn').addEventListener('click', async () => {
+    const url = "https://tupagina.com/gayworldx";
+
+    try {
+        await navigator.share({
+            title: "GAYWORLD X",
+            text: "Entra a GAYWORLD X (+18)",
+            url: url
+        });
+    } catch (err) {
+        alert("Copia este enlace: " + url);
+    }
+});
+</script>
+
+<script src="script/scriptsloco.js"></script>
+</body>
+</html>
